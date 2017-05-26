@@ -8,5 +8,5 @@ install:
     - image="dves"
     - docker build -t "$image" .
     - docker inspect "$image"
-    - docker run --rm -it "$image" ffmpeg
+    - docker run --rm -it "$image" ffmpeg -version
     - docker run --rm -it "$image" ffmsindex
